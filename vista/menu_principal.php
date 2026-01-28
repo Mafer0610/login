@@ -9,7 +9,6 @@ if (!isset($_SESSION['usuario_id'])) {
 
 // Obtener datos de la sesión
 $usuario = $_SESSION['usuario'];
-$nombre = isset($_SESSION['nombre']) && !empty($_SESSION['nombre']) ? $_SESSION['nombre'] : $_SESSION['usuario'];
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -123,14 +122,14 @@ $nombre = isset($_SESSION['nombre']) && !empty($_SESSION['nombre']) ? $_SESSION[
     <div class="header">
         <h1>Sistema de Gestión</h1>
         <div class="user-info">
-            <span class="user-name">👤 <?php echo htmlspecialchars($nombre); ?></span>
+            <span class="user-name">👤 <?php echo htmlspecialchars($usuario); ?></span>
             <a href="logout.php" class="logout-btn">Cerrar Sesión</a>
         </div>
     </div>
 
     <div class="container">
         <div class="welcome-card">
-            <h2>¡Bienvenido, <?php echo htmlspecialchars($nombre); ?>! 🎉</h2>
+            <h2>¡Bienvenido, <?php echo htmlspecialchars($usuario); ?>! </h2>
             <p>Has iniciado sesión exitosamente en el sistema</p>
         </div>
 

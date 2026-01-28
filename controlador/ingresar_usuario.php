@@ -65,8 +65,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $passwordEncriptado = password_hash($password, PASSWORD_ALGORITHM, ['cost' => PASSWORD_COST]);
 
         // Insertar el nuevo usuario
-        $query = "INSERT INTO usuarios (usuario, password, nombre, fecha_creacion) 
-                  VALUES (:usuario, :password, :usuario, NOW())";
+        $query = "INSERT INTO usuarios (usuario, password, fecha_creacion) 
+                  VALUES (:usuario, :password, NOW())";
         
         $stmt = $db->prepare($query);
         $stmt->bindParam(':usuario', $usuario);

@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $db = $conexion->getConexion();
 
         // Buscar el usuario en la base de datos
-        $query = "SELECT id, usuario, password, nombre FROM usuarios WHERE usuario = :usuario";
+        $query = "SELECT id, usuario, password FROM usuarios WHERE usuario = :usuario";
         $stmt = $db->prepare($query);
         $stmt->bindParam(':usuario', $usuario);
         $stmt->execute();
@@ -34,7 +34,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 // Contraseña correcta - crear sesión
                 $_SESSION['usuario_id'] = $row['id'];
                 $_SESSION['usuario'] = $row['usuario'];
-                $_SESSION['nombre'] = $row['nombre'];
                 $_SESSION['login_time'] = time();
 
                 // Redirigir al menú principal
