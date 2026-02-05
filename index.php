@@ -18,14 +18,14 @@ unset($_SESSION['error']);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesión</title>
     <style>
-        * {
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #9B1B30 0%, #6B0F1A 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -65,12 +65,12 @@ unset($_SESSION['error']);
         input[type="text"]:focus,
         input[type="password"]:focus {
             outline: none;
-            border-color: #667eea;
+            border-color: #9B1B30;
         }
         button {
             width: 100%;
             padding: 12px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #9B1B30 0%, #6B0F1A 100%);
             color: white;
             border: none;
             border-radius: 5px;
@@ -98,7 +98,7 @@ unset($_SESSION['error']);
             border-top: 1px solid #eee;
         }
         .link-registro a {
-            color: #667eea;
+            color: #9B1B30;
             text-decoration: none;
             font-weight: bold;
         }

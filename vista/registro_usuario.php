@@ -14,14 +14,14 @@ unset($_SESSION['tipo_mensaje']);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Usuario</title>
     <style>
-        * {
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #9B1B30 0%, #6B0F1A 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -61,12 +61,12 @@ unset($_SESSION['tipo_mensaje']);
         }
         input:focus {
             outline: none;
-            border-color: #667eea;
+            border-color: #9B1B30;
         }
         button {
             width: 100%;
             padding: 12px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #9B1B30 0%, #6B0F1A 100%);
             color: white;
             border: none;
             border-radius: 5px;
@@ -99,7 +99,7 @@ unset($_SESSION['tipo_mensaje']);
             margin-top: 20px;
         }
         .link-login a {
-            color: #667eea;
+            color: #9B1B30;
             text-decoration: none;
             font-weight: bold;
         }

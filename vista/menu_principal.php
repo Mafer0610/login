@@ -24,7 +24,7 @@ $usuario = $_SESSION['usuario'];
         }
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #9B1B30 0%, #6B0F1A 100%);
             min-height: 100vh;
         }
         .header {
@@ -49,7 +49,7 @@ $usuario = $_SESSION['usuario'];
             font-weight: bold;
         }
         .logout-btn {
-            background: #e74c3c;
+            background: #c0392b;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -77,7 +77,7 @@ $usuario = $_SESSION['usuario'];
             margin-bottom: 30px;
         }
         .welcome-card h2 {
-            color: #667eea;
+            color: #9B1B30;
             font-size: 32px;
             margin-bottom: 10px;
         }
@@ -104,10 +104,6 @@ $usuario = $_SESSION['usuario'];
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0,0,0,0.2);
         }
-        .menu-item-icon {
-            font-size: 48px;
-            margin-bottom: 15px;
-        }
         .menu-item h3 {
             color: #333;
             margin-bottom: 10px;
@@ -122,7 +118,7 @@ $usuario = $_SESSION['usuario'];
     <div class="header">
         <h1>Sistema de Gestión</h1>
         <div class="user-info">
-            <span class="user-name">👤 <?php echo htmlspecialchars($usuario); ?></span>
+            <span class="user-name"><?php echo htmlspecialchars($usuario); ?></span>
             <a href="logout.php" class="logout-btn">Cerrar Sesión</a>
         </div>
     </div>
@@ -135,25 +131,21 @@ $usuario = $_SESSION['usuario'];
 
         <div class="menu-grid">
             <div class="menu-item">
-                <div class="menu-item-icon">📈</div>
                 <h3>Dashboard</h3>
                 <p>Ver estadísticas y reportes del sistema</p>
             </div>
 
             <div class="menu-item">
-                <div class="menu-item-icon">👥</div>
                 <h3>Usuarios</h3>
                 <p>Administrar usuarios del sistema</p>
             </div>
 
             <div class="menu-item">
-                <div class="menu-item-icon">⚙️</div>
                 <h3>Configuración</h3>
                 <p>Ajustes y preferencias del sistema</p>
             </div>
 
             <div class="menu-item">
-                <div class="menu-item-icon">📁</div>
                 <h3>Archivos</h3>
                 <p>Gestión de documentos y archivos</p>
             </div>

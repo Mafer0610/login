@@ -3,8 +3,8 @@
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'sistema_login');
 define('DB_USER', 'postgres');
-define('DB_PASS', 'Yamatog0'); // Cambia esto por tu contraseña de PostgreSQL
-define('DB_PORT', '5432'); // Puerto por defecto de PostgreSQL
+define('DB_PASS', 'Yamatog0');
+define('DB_PORT', '5432');
 
 // Configuración de la aplicación
 define('BASE_URL', 'http://localhost/sistema_login/');
